@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #18191a;
+}
+
+.resistorDiv {
+  background-color: #242526;
+  color: #e7e9ed;
+  width: 30vw;
+  height: 20vh;
+  opacity: 0.3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 45px;
+  cursor: pointer;
+}
+.resistorDiv img {
+  filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(47deg) brightness(104%) contrast(101%);
+}
+
+.resistorPlatform {
+  position: absolute;
+  left: 10vw;
+  top: 10vh;
+  border-radius: 45px;
+  background-color: pink;
+  height: 80vh;
+  width: 80vw;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: " img img " " nameLabel nameInput" " voltageLabel voltageInput " " intensityLabel intensityInput " "table table";
+  justify-items: center;
+}
+.resistorPlatform img {
+  grid-area: img;
+}
+.resistorPlatform .table {
+  border: solid 1px;
+  grid-area: table;
+  text-align: center;
+  width: 60%;
+}
+.resistorPlatform .table th,
+.resistorPlatform .table td {
+  border: solid 1px;
+}/*# sourceMappingURL=index.css.map */
